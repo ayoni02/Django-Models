@@ -7,4 +7,4 @@ class Post(models.Model):
     Text = models.TextField('Any amount of text')
     Author = models.ForeignKey('Post', on_delete = get_user_model())
     Created_date = models.DateTimeField('A date-time column')
-    Publish_date = models.DateTimeField('A date-time column')
+    Published_date = models.DateTimeField('A date-time column')
